@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Card from "./components/UI/Card";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div style={{display:"flex"}}>
+          <Card
+              imgSrc={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKiPCD8qZBoxL3lIGCE-PMYB1pGQvXPuQ5A&usqp=CAU"}
+              title={"Lorem"}
+              text={"lorem щось там "}
+              backText={"Це зворотня сторона"}
+              />
+            <Card
+                imgSrc={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKiPCD8qZBoxL3lIGCE-PMYB1pGQvXPuQ5A&usqp=CAU"}
+                title={"Lorem"}
+                text={"lorem щось там "}
+                backText={"Це зворотня сторона"}
+            />
+            <Card
+                imgSrc={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKiPCD8qZBoxL3lIGCE-PMYB1pGQvXPuQ5A&usqp=CAU"}
+                title={"Lorem"}
+                text={"lorem щось там "}
+                backText={"Це зворотня сторона"}
+            />
+        </div>
+    );
+};
 
 export default App;

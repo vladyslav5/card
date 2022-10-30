@@ -1,0 +1,42 @@
+.card-wrapper {
+  width: 200px;
+  height: 400px;
+
+  div:first-child {
+    width: 200px;
+    height: 400px;
+    background-color: moccasin;
+    transition: transform 1s linear;
+  }
+
+}
+
+div.card-wrapper:hover {
+  div:first-child {
+    transform: rotate3d(0, 1, 0, 180deg);
+
+    .font-side {
+      display: none;
+    }
+    .back-side {
+      height: inherit;
+      background-color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: scale(-1, 1);
+
+    }
+  }
+}
+
+.font-side {
+  width: 100%;
+  > img {
+    width: inherit;
+  }
+}
+
+.back-side {
+  display: none;
+}
